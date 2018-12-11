@@ -2,60 +2,52 @@
 # Introduction
 
 ## Introduction
-This lesson summarizes the topics we'll be covering in section 28 and why they'll be important to you as a data scientist.
+This lesson summarizes the topics we'll be covering in section 31 and why they'll be important to you as a data scientist.
 
 ## Objectives
 You will be able to:
 * Understand and explain what is covered in this section
 * Understand and explain why the section will help you to become a data scientist
 
-## Graph Theory
+## Decision Trees
 
-And now for something completely different! There are certain classes of data science problems where building and then traversing a graph can be a very powerful way to solve them. Not just for analysing social networks, but for anomaly detection, recommendation systems and geospacial data (e.g. calculating shipping routes) graph based approaches can be a really useful tool. In this section, we're going to provide an introduction to graphs that you can use as a starting point if you want to use such techniques in the future.
+In this section, we're going to introduce another kind of model for predicting values that can be used for both continuous and categorical predictions - decision trees. Despite the fact that they've been used for decades they are still (in conjunction with ensemble methods that we'll learn about in the next section) one of the most powerful modeling tools available for many kinds of machine learning. They are also highly interpretable when compared to deep learning models (it's easy to explain and understand how they make their decisions).
 
-### Introduction to Graph Theory
+### Introduction to PAC Learning Theory
 
-We start by providing a basic introduction to what a graph is - a series of nodes (sometimes called vertices or points) and edges (sometimes called arcs or lines). We also introduce some important properties of graphs such as directionality (I know of ex-President Obama, but he may not have heard of me!) and weight (anything from the strength of a friendship to the time it takes to drive between two cities).
+We kick off the section by introducing "Probably Approximately Correct" learning theory - a theory that provides a mathematically rigorous definition of what machine learning is.
 
-### Graphs in Python with NetworkX
+### Introduction to Decision Trees
 
-One of the most common packages for working with graphs in Python is NetworkX. In this lesson, we look at how to create and visualize graphs using NetworkX.
+We then introduce the idea of decision trees. Decision trees are used to classify (or estimate continuous values) by partitioning the sample space as efficiently as possible into sets with similar data points, until you get to a (close to) homogenous set and can reasonably predict the value for your new data point.
 
-### Graph Data I/O
+### Entropy and Information Gain
 
-From there, we look at two common representations for serializing graphs - edge lists and adjacency matrices so you can load graph data into NetworkX.
+The problem with decision trees is that you could get very different predictions depending on what questions you ask and in what order. The question then is how to come up with the right questions to ask in the decision tree in the right order. In this lesson we introduce the idea of entropy and information gain as mechanisms for selecting the most promising questions to ask in a decision tree.
 
-### Implementing and Visualizing Graphs with NetworkX
+### ID3 Classification Trees
 
-We then provide you with a lab to pull together all the steps you learned in the previous lessons to get some practice creating and visualizing graphs using NetworkX and Matplotlib.
+We then introduce Ross Quinlan's ID3 (Iterative Dichotomiser 3) algorithm for generating a decision tree from a data set.
 
-### Graph Theory: Simple and Shortest Paths
+### Building Trees Using Scikit-learn
 
-The real power of Graphs as a way of modeling data is that there are a huge number of powerful algorithms for performing analyses on graphs. In this lesson we introduce the idea of the simple and shortest paths for undirected, directed and weighted graphs and introduce Djikstras algorithm for calculating the shortest path between two nodes.
+Next up, we look at how to build a decision tree using the built in functions available in scikit-learn, and how to test the accuracy of the predictions whether using a simple accuracy measure, AUC, or a confusion matrix. We also show how to use the graph_viz library to generate a visualization of the reesulting decision tree.
 
-### Network Dynamics: Node Centrality
+### Hyperparameter Tuning and Pruning
 
-Another way of modeling graph data is to try to identify network centrality (in a social graph, think of people who have a *lot* of friends). In this lesson we introduce a number of measures for analysing graph data including degree, closeness, betweenness and eigenvector centrality measures.
+We then look at some of the hyper parameters available when optimizing a decision tree. For example, if you're not careful, generated decision trees can lead to over fitting of data (perfect match for train, horrible for test). There are a number of hyper parameters you can use when generating a tree to minimuze overfitting such as maximum depth or minimum leaf sample size. In this lesson we look at these various "pruning" strategies to avoid overfitting of the data and to create a better model. 
 
-### Network Dynamics: Bipartite Graphs
+### Regression with CART Trees
 
-A bipartite graph is one in which every edge connects from one set to the other but no edge connects two nodes within the same set. In this lesson we introduce bipartite graphs and explain how measures of centrality work for such graphs.
+Up to this point, all of our examples for decision trees have been classifiers, but decision trees can also be used for regressions. In this lesson we introduce the Classification And Regression Trees (CART) algorithm for regression.
 
-### Network Connectivity: Community Detection
+### Regression Trees and Model Optimization
 
-Community detection allows us to look at subsets of the nodes and edges within a graph (subgraphs) to find communities (networks which are more densely interconnected) within a larger graph. In this section we look at various techniques such as the Girvan-Newman algorithm for detecting communities within graphs. 
-
-### Social Network Analysis: Ego Networks
-
-Next up we introduce the island method and the idea of ego networks for analysing social networks.
-
-### Amazon Recommendation System 
-
-Finally, we end up the section by asking you to create a book recommendation system using an Amazon co-purchase data set.
-
+In the final lab of the section, we ask you to do a regression analysis using a CART tree and hyper parameter tuning to predict pricing for the Boston Housing data set, giving you a chance to bring everything you've learned in the section to bear on a specific problem.
 
 
 ## Summary
 
-Once you know about graphs as a modeling technique, you'll start to see them everywhere. In this section we give you the tools to start to model data using a range of graph based algorithms.
+Decision trees are a highly effective and interpretable approach to machine learning. This section will provide you with the skills to create both classifiers and to perform regression using decision trees and to use hyper parameter tuning to optimize your model fit.
+
 
