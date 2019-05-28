@@ -2,7 +2,7 @@
 # Introduction
 
 ## Introduction
-This lesson summarizes the topics we'll be covering in section 31 and why they'll be important to you as a data scientist.
+This lesson summarizes the topics we'll be covering in this section and why they'll be important to you as a data scientist.
 
 ## Objectives
 You will be able to:
@@ -11,11 +11,11 @@ You will be able to:
 
 ## Decision Trees
 
-In this section, we're going to introduce another kind of model for predicting values that can be used for both continuous and categorical predictions - decision trees. Despite the fact that they've been used for decades they are still (in conjunction with ensemble methods that we'll learn about in the next section) one of the most powerful modeling tools available for many kinds of machine learning. They are also highly interpretable when compared to deep learning models (it's easy to explain and understand how they make their decisions).
+In this section, we're going to introduce another kind of model for predicting values that can be used for both continuous and categorical predictions - decision trees. Despite the fact that they've been around for decades, they are still (in conjunction with ensemble methods that we'll learn about in the next section) one of the most powerful modeling tools available for many kinds of machine learning. They are also highly interpretable when compared to more complex models (it's easy to explain and understand how they make their decisions).
 
-### Introduction to PAC Learning Theory
+### Introduction to PAC Learning Theory and Supervised Learning
 
-We kick off the section by introducing "Probably Approximately Correct" learning theory - a theory that provides a mathematically rigorous definition of what machine learning is.
+We kick off the section by introducing "Probably Approximately Correct" learning theory - a theory that provides a mathematically rigorous definition of what machine learning is. We'll also dig into what exactly the term "Supervised Learning" means, and where it fits in the overall hierarchy of Machine Learning, Artificial Intelligence, and Data Science.
 
 ### Introduction to Decision Trees
 
