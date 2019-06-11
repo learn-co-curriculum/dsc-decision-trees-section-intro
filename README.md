@@ -31,11 +31,11 @@ We then introduce Ross Quinlan's ID3 (Iterative Dichotomiser 3) algorithm for ge
 
 ### Building Trees Using Scikit-learn
 
-Next up, we look at how to build a decision tree using the built in functions available in scikit-learn, and how to test the accuracy of the predictions whether using a simple accuracy measure, AUC, or a confusion matrix. We also show how to use the graph_viz library to generate a visualization of the reesulting decision tree.
+Next up, we look at how to build a decision tree using the built in functions available in scikit-learn, and how to test the accuracy of the predictions whether using a simple accuracy measure, AUC, or a confusion matrix. We also show how to use the graph_viz library to generate a visualization of the resulting decision tree.
 
 ### Hyperparameter Tuning and Pruning
 
-We then look at some of the hyper parameters available when optimizing a decision tree. For example, if you're not careful, generated decision trees can lead to over fitting of data (perfect match for train, horrible for test). There are a number of hyper parameters you can use when generating a tree to minimuze overfitting such as maximum depth or minimum leaf sample size. In this lesson we look at these various "pruning" strategies to avoid overfitting of the data and to create a better model. 
+We then look at some of the hyper parameters available when optimizing a decision tree. For example, if you're not careful, generated decision trees can lead to over fitting of data (perfect match for train, horrible for test). There are a number of hyper parameters you can use when generating a tree to minimize overfitting such as maximum depth or minimum leaf sample size. In this lesson we look at these various "pruning" strategies to avoid overfitting of the data and to create a better model. 
 
 ### Regression with CART Trees
 
